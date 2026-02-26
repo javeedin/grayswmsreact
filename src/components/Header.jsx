@@ -4,6 +4,7 @@ import './Header.css'
 const PAGE_TITLES = {
   '/': 'Dashboard',
   '/wms': 'Warehouse Management System',
+  '/wms/trips': 'Trip Management',
   '/orders': 'Order Management',
   '/inventory': 'Inventory',
   '/shipping': 'Shipping & Receiving',

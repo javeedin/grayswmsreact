@@ -26,13 +26,20 @@ export default function ModulePlaceholder({ title, subtitle, icon, color, bg, se
 
       <div className="module-sections-grid">
         {sections.map((sec) => (
-          <div key={sec.title} className="module-section-card">
+          <div key={sec.title} className={`module-section-card ${sec.live ? 'live' : ''}`}>
             <div className="section-card-icon" style={{ color }}>
               {sec.icon}
             </div>
-            <h3>{sec.title}</h3>
+            <h3>
+              {sec.title}
+              {sec.live && <span className="live-badge">Live</span>}
+            </h3>
             <p>{sec.description}</p>
-            <button className="section-btn" style={{ background: color }}>
+            <button
+              className="section-btn"
+              style={{ background: color }}
+              onClick={sec.onOpen}
+            >
               Open
             </button>
           </div>

@@ -79,6 +79,25 @@
   font-size: 15px;
   font-weight: 700;
   color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.live-badge {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: #d1fae5;
+  color: #065f46;
+  padding: 2px 7px;
+  border-radius: 20px;
+}
+
+.module-section-card.live {
+  border-color: #a7f3d0;
+  box-shadow: 0 2px 12px rgba(16, 185, 129, 0.1);
 }
 
 .module-section-card p {

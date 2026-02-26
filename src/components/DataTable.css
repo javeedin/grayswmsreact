@@ -1,0 +1,193 @@
+.dt-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 0 0 var(--radius) var(--radius);
+  overflow: hidden;
+}
+
+.dt-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: #fafafa;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.dt-search {
+  flex: 1;
+  min-width: 200px;
+  max-width: 320px;
+  padding: 7px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: 7px;
+  font-size: 13px;
+  outline: none;
+  background: #fff;
+  color: var(--text);
+  transition: border-color 0.2s;
+}
+
+.dt-search:focus {
+  border-color: var(--primary-light);
+}
+
+.dt-count {
+  font-size: 13px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+.dt-export-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.dt-export-btn:hover {
+  background: var(--bg);
+  border-color: var(--primary-light);
+}
+
+.dt-scroll {
+  overflow-x: auto;
+  flex: 1;
+}
+
+.dt-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.dt-table th {
+  background: #f5f7fa;
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-muted);
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.dt-table th.sortable {
+  cursor: pointer;
+}
+
+.dt-table th.sortable:hover {
+  background: #edf0f5;
+  color: var(--primary);
+}
+
+.sort-arrow {
+  color: var(--primary);
+}
+
+.dt-table td {
+  padding: 9px 14px;
+  border-bottom: 1px solid #f0f0f0;
+  color: var(--text);
+  white-space: nowrap;
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dt-table tr.dt-alt td {
+  background: #fafbfd;
+}
+
+.dt-table tbody tr:hover td {
+  background: #f0f4ff;
+}
+
+.dt-empty {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.dt-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  border-top: 1px solid var(--border);
+  background: #fafafa;
+}
+
+.dt-pagination button {
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.dt-pagination button:hover:not(:disabled) {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.dt-pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.dt-page-info {
+  font-size: 13px;
+  color: var(--text-muted);
+  padding: 0 8px;
+}
+
+/* Status badges used in data table */
+.status-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-shipped,
+.status-completed,
+.status-closed { background: #d1fae5; color: #065f46; }
+
+.status-booked,
+.status-open { background: #dbeafe; color: #1e40af; }
+
+.status-awaiting-shipping,
+.status-awaiting-fulfillment,
+.status-pending { background: #fef3c7; color: #92400e; }
+
+.status-backordered,
+.status-on-hold { background: #fee2e2; color: #991b1b; }
+
+.status-cancelled { background: #f3f4f6; color: #6b7280; }

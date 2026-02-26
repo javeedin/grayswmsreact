@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Login from './pages/Login'
 import Home from './pages/Home'
 import WMS from './pages/modules/WMS'
+import TripManagement from './pages/modules/TripManagement'
 import OrderManagement from './pages/modules/OrderManagement'
 import Inventory from './pages/modules/Inventory'
 import Shipping from './pages/modules/Shipping'
@@ -25,6 +26,7 @@ function App() {
         >
           <Route index element={<Home />} />
           <Route path="wms" element={<WMS />} />
+          <Route path="wms/trips" element={<TripManagement />} />
           <Route path="orders" element={<OrderManagement />} />
           <Route path="inventory" element={<Inventory />} />
           <Route path="shipping" element={<Shipping />} />

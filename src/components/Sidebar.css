@@ -77,6 +77,12 @@
   font-size: 13.5px;
   font-weight: 500;
   transition: background 0.15s, color 0.15s;
+  position: relative;
+}
+
+.sidebar-link.indent {
+  padding-left: 32px;
+  font-size: 13px;
 }
 
 .sidebar-link:hover {

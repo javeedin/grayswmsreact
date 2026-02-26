@@ -740,9 +740,6 @@ export default function TripManagement() {
             <line x1="12" y1="16" x2="12.01" y2="16"/>
           </svg>
           <strong>Error fetching trips:</strong> {error}
-          {error.toLowerCase().includes('cors') || error.toLowerCase().includes('failed to fetch') ? (
-            <span> — CORS restriction detected. The Oracle APEX API must allow requests from this origin, or use the Desktop application.</span>
-          ) : null}
         </div>
       )}
 

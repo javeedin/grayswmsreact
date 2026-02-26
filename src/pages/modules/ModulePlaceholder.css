@@ -1,0 +1,133 @@
+.module-page {
+  padding: 28px 32px;
+  max-width: 1100px;
+}
+
+.module-page-header {
+  margin-bottom: 32px;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 0;
+  margin-bottom: 20px;
+  transition: color 0.15s;
+}
+
+.back-btn:hover {
+  color: var(--primary);
+}
+
+.module-page-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.module-page-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.module-page-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.module-page-sub {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.module-sections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.module-section-card {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.section-card-icon {
+  margin-bottom: 4px;
+}
+
+.module-section-card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.module-section-card p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  flex: 1;
+}
+
+.section-btn {
+  margin-top: 8px;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  align-self: flex-start;
+  transition: opacity 0.15s;
+}
+
+.section-btn:hover {
+  opacity: 0.88;
+}
+
+.coming-soon-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #eef4ff;
+  border: 1px solid #bdd0f5;
+  color: var(--primary-light);
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .module-sections-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .module-page {
+    padding: 20px 16px;
+  }
+  .module-sections-grid {
+    grid-template-columns: 1fr;
+  }
+}
